@@ -53,5 +53,12 @@
     </article>
     <!-- your content here... -->
     <!-- <script src="js/scripts.js"></script> -->
+    <script>
+      const name = document.location.hostname.split(".")[0];
+      const nodes = document.querySelectorAll(".text-gradient");
+      nodes.forEach((node) => {
+        node.innerHTML = name;
+      });
+    </script>
   </body>
 </html>
