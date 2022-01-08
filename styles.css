@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  /* background: linear-gradient(220.55deg, #fff500 0%, #ff00b8 100%); */
+  background: linear-gradient(220.55deg, #5d85a6 0%, #0e2c5e 100%);
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+
+  font-family: "VT323", monospace;
+}
+
+article {
+  background: seashell;
+  border: 3px black solid;
+  border-radius: 2%;
+  padding: 1rem;
+  max-width: 450px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.text-glow {
+  text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-semi-transparent {
+  background-color: rgba(var(--primary-color), 0.15);
+  border: 1px solid rgba(var(--primary-color), 0.25);
+  color: rgba(var(--text-color), 0.8);
+}
+
+.btn-gradient-border {
+  color: seashell;
+  padding: 0.5rem;
+  border: 2px double transparent;
+  background-image: linear-gradient(220.55deg, #5d85a6 0%, #0e2c5e 100%),
+    radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  text-align: center;
+}
+
+.btn-semi-transparent:hover {
+  background-color: rgba(var(--primary-color), 0.35);
+  border: 1px solid rgba(var(--primary-color), 0.5);
+  color: rgba(var(--text-color), 0.9);
+}
+
+.center {
+  text-align: center;
+}
